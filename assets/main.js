@@ -18,6 +18,7 @@ function apiTreatment(json) {
         const specie = document.querySelector('.specie');
         let status = document.querySelector('.statu');
         const origin = document.querySelector('.origin');
+        const loc = document.querySelector('.origin-loc');
 
         for(let i = 0; i < results.length; i++){
             if(input.value === results[i].name){
@@ -30,6 +31,7 @@ function apiTreatment(json) {
                 status.innerHTML = results[i].status;
                 status.style.color = status.innerHTML == 'Alive' ? status.style.color = 'green' : status.style.color = 'red';
                 origin.innerHTML = results[i].origin.name;
+                loc.innerHTML = results[i].location.name;
             }
         }
 
