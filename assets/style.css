@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Glogal*/
+
+.h1{font-size: 3rem;}
+.h2{font-size: 2.5rem;}
+.h3{font-size: 2rem;}
+.h4{font-size: 1.5rem;}
+.h5{font-size: 1rem;}
+.p{font-size: 1rem;}
+
+.input-text{
+    margin: 10px 0px;
+    padding: 10px;
+    width: 340px;
+    height: 30px;
+    background: linear-gradient(to right, #000000, #000c02);
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    letter-spacing: 1.5px;
+
+    outline: none;
+
+    border-left: 1px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0px 0px 0px 5px;
+
+    transition: 500ms ease-in-out;
+}
+
+.btn-submit{
+    width: 120px;
+    height: 40px;
+
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #015a13;
+    box-shadow: 0px 4px 10px 2px #002407;
+
+    transition: 500ms ease-in-out;
+}
+
+.btn-submit:hover{
+   background-color: #026436;
+   box-shadow: 0px 4px 10px 2px #00753f;
+
+}
+
+.img-profile{
+    border-radius: 50px;
+
+}
+
+.ul-list{
+    width: 100%;
+    
+    font-family: 'Open Sans';
+    letter-spacing: 1.5px;
+    list-style: none;
+
+}
+
+.name{
+    font-family: 'Architects Daughter';
+}
+
+/* CSS Local*/
+
+body{
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    font-family: 'Shadows Into Light';
+}
+
+main{
+
+    padding: 0px 30px;
+    width: 100%;
+    min-height: 95vh;
+    background: linear-gradient(to right, #000000, #001603);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+form, section{
+
+    width: 100%;
+    height: 60vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-family: 'Open Sans';
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    background-color: #012215;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+@media (max-width: 700px) {
+    main{
+        flex-direction: column;
+    }
+
+    .form, .section{
+        height: auto;
+    }
+}
+
+@media (max-width: 350px) {
+    .input-text{
+        width: 280px;
+    }
+}
